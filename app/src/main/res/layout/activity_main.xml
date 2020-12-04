@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textviewTitle"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập thông tin" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:hint="Username"
+        android:layout_below="@id/textviewTitle"
+        android:id="@+id/edittextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:layout_below="@id/edittextUsername"
+        android:id="@+id/edittextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:text="Remember me"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edittextPassword"
+        android:id="@+id/checkboxSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng nhập"
+        android:layout_below="@id/checkboxSave"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
